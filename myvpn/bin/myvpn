@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+from myvpn.core import Management
+import pexpect
+import sys
+
+if len(sys.argv) == 1:
+        print "Usage:"
+        print "\tmyvpn PROFILE OTPTOKEN"
+        sys.exit()
+
+# Gather the information
+profile = sys.argv[1]
+
+# Add Authcode
+# authcode = sys.argv[2]
+try:
+	l = Management(profile)
+	l.connect()
+except Exception,e:
+	print e
