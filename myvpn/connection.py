@@ -9,12 +9,7 @@ class VPNConnection:
 
 		# Load the sudo pw
 		self.read_sudo()
-
-		self.password = raw_input("Enter the passphrase: ")
-		#if len(sys.argv) == 3:
-		#	self.password = sys.argv[2]
-		#else:
-		#	self.password = ''
+		self.password = raw_input("Enter VPN  passphrase: ")
 
 	def open(self):
 		command = "sudo openvpn --config "+self.ovpn
