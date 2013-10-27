@@ -15,7 +15,7 @@ sudo password stored inside ``~/.myvpn/.sudo`` file.
 
 **Usage** 
 To connect to your profile:
-``myvpn profile1``
+``myvpn --profile profile1``
 
 myvpn will read following OVPN file:
 ``~/.myvpn/profile1/profile1.ovpn``
